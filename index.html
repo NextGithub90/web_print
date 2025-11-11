@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anugerah Printer – One Stop Digital Printing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Top Contact Bar (awal) -->
+    <div class="topbar py-1 text-white bg-navy-900">
+        <div class="container d-flex justify-content-between align-items-center small" style="padding: 1rem;">
+            <div class="d-flex gap-3">
+                <a href="https://wa.me/6287779278899" class="text-white text-decoration-none"><i
+                        class="bi bi-whatsapp me-1"></i> WA 1: 0877 7927 8899</a>
+                <a href="https://wa.me/6285715007878" class="text-white text-decoration-none"><i
+                        class="bi bi-whatsapp me-1"></i> WA 2: 0857 1500 7878</a>
+            </div>
+            <div class="d-none d-md-block">One Stop Digital Printing</div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-navy sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="img/logo.jpeg" alt="Logo" class="me-2" style="height:38px;width:auto;border-radius:6px;" />
+                <span class="fw-bold">Anugerah Printer</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+                aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#unggulan">Keunggulan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                </ul>
+                <div class="ms-lg-3 d-flex gap-2">
+                    <a href="https://wa.me/6287779278899" class="btn btn-accent"><i class="bi bi-whatsapp me-1"></i>
+                        Pesan Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <section id="hero" class="position-relative fade-up">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators" style="bottom: -66px !important;">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Book_mockup.jpeg" class="d-block w-100 hero-img" alt="Buku Mockup" />
+                    <!-- <div class="carousel-caption text-start">
+                        <h1 class="display-6 fw-bold">Bisa Digital Printing</h1>
+                        <p class="lead">Merchandise & promosi: buku, banner, mug, kalender, dan lainnya.</p>
+                        <a href="https://wa.me/6287779278899" class="btn btn-accent btn-lg"><i
+                                class="bi bi-whatsapp me-2"></i>Pesan Sekarang</a>
+                    </div> -->
+                </div>
+                <div class="carousel-item">
+                    <img src="img/roll_up_banner.jpeg" class="d-block w-100 hero-img" alt="Roll Up Banner" />
+                    <!-- <div class="carousel-caption text-start">
+                        <h1 class="display-6 fw-bold">Roll Up Banner</h1>
+                        <p class="lead">Ukuran: 60x160, 85x200, 120x200, 150x200.</p>
+                        <a href="#produk" class="btn btn-outline-light">Lihat Produk</a>
+                    </div> -->
+                </div>
+                <div class="carousel-item">
+                    <img src="img/pop_up_table.jpeg" class="d-block w-100 hero-img" alt="Pop Up Table" />
+                    <!-- <div class="carousel-caption text-start">
+                        <h1 class="display-6 fw-bold">Event & Booth</h1>
+                        <p class="lead">Event Desk, Easy Counter, Pop Up Table, dan lainnya.</p>
+                        <a href="https://wa.me/6285715007878" class="btn btn-outline-light"><i
+                                class="bi bi-whatsapp me-2"></i>Hubungi Kami</a>
+                    </div> -->
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Prev</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Produk Populer -->
+    <section id="produk" class="section-pad bg-light fade-up">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2 class="section-title">Produk Populer</h2>
+
+            </div>
+            <!-- Filter Kategori -->
+            <div class="filter-bar d-flex flex-wrap gap-2 mb-3">
+                <button class="chip-btn active" data-filter="all">Semua</button>
+                <button class="chip-btn" data-filter="print-a3">Print A3+</button>
+                <button class="chip-btn" data-filter="print-outdoor">Print Outdoor</button>
+                <button class="chip-btn" data-filter="print-indoor">Print Indoor</button>
+                <button class="chip-btn" data-filter="cetak-offset">Cetak Offset</button>
+
+            </div>
+            <div class="row g-3">
+                <!-- Buku Hard Cover -->
+                <div class="col-6 col-md-3 product-item fade-up" data-category="cetak-offset">
+                    <div class="card product-card h-100">
+                        <img src="img/Book_mockup.jpeg" class="card-img-top" alt="Buku Hard Cover" />
+                        <div class="card-body">
+                            <h6 class="card-title">Buku Hard Cover</h6>
+                            <button class="btn btn-navy btn-sm btn-order" data-product="Buku Hard Cover">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Buku Soft Cover -->
+                <div class="col-6 col-md-3 product-item fade-up" data-category="cetak-offset">
+                    <div class="card product-card h-100">
+                        <img src="img/Book_mockup.jpeg" class="card-img-top" alt="Buku Soft Cover" />
+                        <div class="card-body">
+                            <h6 class="card-title">Buku Soft Cover</h6>
+                            <button class="btn btn-navy btn-sm btn-order" data-product="Buku Soft Cover">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Kalender Dinding -->
+                <div class="col-6 col-md-3 product-item fade-up" data-category="print-a3">
+                    <div class="card product-card h-100">
+                        <img src="img/kalender.jpeg" class="card-img-top" alt="Kalender Dinding" />
+                        <div class="card-body">
+                            <h6 class="card-title">Kalender Dinding</h6>
+                            <button class="btn btn-navy btn-sm btn-order" data-product="Kalender Dinding">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Kalender Meja -->
+                <div class="col-6 col-md-3 product-item fade-up" data-category="print-a3">
+                    <div class="card product-card h-100">
+                        <img src="img/kalender.jpeg" class="card-img-top" alt="Kalender Meja" />
+                        <div class="card-body">
+                            <h6 class="card-title">Kalender Meja</h6>
+                            <button class="btn btn-navy btn-sm btn-order" data-product="Kalender Meja">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kop Surat -->
+                <div class="col-6 col-md-3 product-item fade-up" data-category="cetak-offset">
+                    <div class="card product-card h-100">
+                        <img src="img/kop_surat.jpeg" class="card-img-top" alt="Kop Surat" />
+                        <div class="card-body">
+                            <h6 class="card-title">Kop Surat</h6>
+                            <button class="btn btn-navy btn-sm btn-order" data-product="Kop Surat">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nota NCR -->
+                <div class="col-6 col-md-3 product-item fade-up" data-category="cetak-offset">
+                    <div class="card product-card h-100">
+                        <img src="img/nota_ncr.jpeg" class="card-img-top" alt="Nota NCR" />
+                        <div class="card-body">
+                            <h6 class="card-title">Nota NCR</h6>
+                            <button class="btn btn-navy btn-sm btn-order" data-product="Nota NCR">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mug / Tumbler -->
+                <div class="col-6 col-md-3 product-item fade-up" data-category="print-a3">
+                    <div class="card product-card h-100">
+                        <img src="img/book_gelas.jpeg" class="card-img-top" alt="Mug / Tumbler" />
+                        <div class="card-body">
+                            <h6 class="card-title">Mug / Tumbler</h6>
+                            <button class="btn btn-navy btn-sm btn-order" data-product="Mug / Tumbler">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sticker Vinyl -->
+                <div class="col-6 col-md-3 product-item fade-up" data-category="print-outdoor">
+                    <div class="card product-card h-100">
+                        <img src="img/logo.jpeg" class="card-img-top" alt="Sticker Vinyl" />
+                        <div class="card-body">
+                            <h6 class="card-title">Sticker Vinyl</h6>
+                            <button class="btn btn-navy btn-sm btn-order" data-product="Sticker Vinyl">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- One Way Vision -->
+                <div class="col-6 col-md-3 product-item fade-up" data-category="print-outdoor">
+                    <div class="card product-card h-100">
+                        <img src="img/logo.jpeg" class="card-img-top" alt="One Way Vision" />
+                        <div class="card-body">
+                            <h6 class="card-title">One Way Vision</h6>
+                            <button class="btn btn-navy btn-sm btn-order" data-product="One Way Vision">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Payung -->
+                <div class="col-6 col-md-3 product-item fade-up" data-category="print-a3">
+                    <div class="card product-card h-100">
+                        <img src="img/logo.jpeg" class="card-img-top" alt="Payung" />
+                        <div class="card-body">
+                            <h6 class="card-title">Payung</h6>
+                            <button class="btn btn-navy btn-sm btn-order" data-product="Payung">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Print Kanvas -->
+                <div class="col-6 col-md-3 product-item fade-up" data-category="print-indoor">
+                    <div class="card product-card h-100">
+                        <img src="img/logo.jpeg" class="card-img-top" alt="Print Kanvas" />
+                        <div class="card-body">
+                            <h6 class="card-title">Print Kanvas</h6>
+                            <button class="btn btn-navy btn-sm btn-order" data-product="Print Kanvas">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Roll Up Banner (ukuran pilihan) -->
+                <!-- <div class="col-12 col-md-6 product-item" data-category="print-outdoor">
+                    <div class="card product-card h-100">
+                        <img src="img/roll_up_banner.jpeg" class="card-img-top" alt="Roll Up Banner" />
+                        <div class="card-body">
+                            <h6 class="card-title">Roll Up Banner</h6>
+                            <p class="small text-muted mb-2">Ukuran: 60x160, 85x200, 120x200, 150x200</p>
+                            <div class="options-grid">
+                                <button class="btn btn-navy btn-sm btn-order"
+                                    data-product="Roll Up 60x160">60x160</button>
+                                <button class="btn btn-navy btn-sm btn-order"
+                                    data-product="Roll Up 85x200">85x200</button>
+                                <button class="btn btn-navy btn-sm btn-order"
+                                    data-product="Roll Up 120x200">120x200</button>
+                                <button class="btn btn-navy btn-sm btn-order"
+                                    data-product="Roll Up 150x200">150x200</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Shopping Bag -->
+                <div class="col-6 col-md-3 product-item fade-up" data-category="print-a3">
+                    <div class="card product-card h-100">
+                        <img src="img/logo.jpeg" class="card-img-top" alt="Shopping Bag" />
+                        <div class="card-body">
+                            <h6 class="card-title">Shopping Bag</h6>
+                            <button class="btn btn-navy btn-sm btn-order" data-product="Shopping Bag">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tripod Banner -->
+                <div class="col-6 col-md-3 product-item fade-up" data-category="print-indoor">
+                    <div class="card product-card h-100">
+                        <img src="img/logo.jpeg" class="card-img-top" alt="Tripod Banner" />
+                        <div class="card-body">
+                            <h6 class="card-title">Tripod Banner</h6>
+                            <button class="btn btn-navy btn-sm btn-order" data-product="Tripod Banner">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Xbanner -->
+                <div class="col-6 col-md-3 product-item fade-up" data-category="print-indoor">
+                    <div class="card product-card h-100">
+                        <img src="img/logo.jpeg" class="card-img-top" alt="Xbanner" />
+                        <div class="card-body">
+                            <h6 class="card-title">X-Banner (60x160, 80x180)</h6>
+                            <div class="d-flex flex-wrap gap-2">
+                                <button class="btn btn-navy btn-sm btn-order"
+                                    data-product="X-Banner 60x160">60x160</button>
+                                <button class="btn btn-navy btn-sm btn-order"
+                                    data-product="X-Banner 80x180">80x180</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event Desk & Easy Counter -->
+                <!-- <div class="col-12 col-md-6 product-item" data-category="print-indoor">
+                    <div class="card product-card h-100">
+                        <img src="img/pop_up_table.jpeg" class="card-img-top" alt="Event Desk" />
+                        <div class="card-body">
+                            <h6 class="card-title">Event Desk / Easy Counter</h6>
+                            <div class="options-grid">
+                                <button class="btn btn-navy btn-sm btn-order"
+                                    data-product="Event Desk Standar">Standar</button>
+                                <button class="btn btn-navy btn-sm btn-order"
+                                    data-product="Event Desk Premium">Premium</button>
+                                <button class="btn btn-navy btn-sm btn-order" data-product="Pop Up Table">Pop Up
+                                    Table</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan Kami -->
+    <section id="unggulan" class="section-pad fade-up">
+        <div class="container">
+            <h2 class="section-title mb-4">Keunggulan Kami</h2>
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <div class="card h-100 feature-card">
+                        <div class="card-body text-center">
+                            <div class="feature-icon mb-2"><i class="bi bi-emoji-smile"></i></div>
+                            <h6 class="fw-semibold">Pelayanan</h6>
+                            <p class="small text-muted">Tim ramah, respons cepat, dan konsultasi gratis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 feature-card">
+                        <div class="card-body text-center">
+                            <div class="feature-icon mb-2"><i class="bi bi-lightning-charge"></i></div>
+                            <h6 class="fw-semibold">Pengerjaan Cepat</h6>
+                            <p class="small text-muted">Proses efisien dengan deadline fleksibel.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 feature-card">
+                        <div class="card-body text-center">
+                            <div class="feature-icon mb-2"><i class="bi bi-patch-check"></i></div>
+                            <h6 class="fw-semibold">Berkualitas</h6>
+                            <p class="small text-muted">Material dan hasil cetak premium.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 feature-card">
+                        <div class="card-body text-center">
+                            <div class="feature-icon mb-2"><i class="bi bi-cash-coin"></i></div>
+                            <h6 class="fw-semibold">Terjangkau</h6>
+                            <p class="small text-muted">Harga bersaing dengan banyak pilihan paket.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section id="testimoni" class="section-pad bg-light fade-up">
+        <div class="container">
+            <h2 class="section-title mb-4">Testimoni Pelanggan</h2>
+            <!-- Desktop: grid 3 kolom -->
+            <div class="d-none d-md-block">
+                <div class="row g-4 align-items-stretch">
+                    <div class="col-md-4">
+                        <div class="speech-card h-100">
+                            <div class="card-body">
+                                <div class="rating mb-2 text-warning">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p class="mb-0">Sangat puas dengan layanan Anugerah Printer, CS ramah dan proses cepat.
+                                    Sukses selalu!</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-meta d-flex align-items-center mt-3">
+                            <div class="testimonial-avatar me-3"><img src="img/logo.jpeg" alt="avatar" /></div>
+                            <div>
+                                <div class="fw-semibold small">DARMAJI</div>
+                                <div class="text-muted small">Satpam</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="speech-card h-100">
+                            <div class="card-body">
+                                <div class="rating mb-2 text-warning">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p class="mb-0">Aku suka hasil cetakan yang tajam dan tone warna sesuai dengan desain
+                                    yang aku kirimkan.</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-meta d-flex align-items-center mt-3">
+                            <div class="testimonial-avatar me-3"><img src="img/logo.jpeg" alt="avatar" /></div>
+                            <div>
+                                <div class="fw-semibold small">RAHMA</div>
+                                <div class="text-muted small">Desainer</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="speech-card h-100">
+                            <div class="card-body">
+                                <div class="rating mb-2 text-warning">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p class="mb-0">Semua banner di desa aku serahin ke Anugerah Printer, karena memang
+                                    hasilnya bagus!</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-meta d-flex align-items-center mt-3">
+                            <div class="testimonial-avatar me-3"><img src="img/logo.jpeg" alt="avatar" /></div>
+                            <div>
+                                <div class="fw-semibold small">SUTRISNO</div>
+                                <div class="text-muted small">Pak RT</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile: slider -->
+            <div id="testiCarousel" class="carousel slide d-md-none carousel-testimonial" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#testiCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testiCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#testiCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="px-2">
+                            <div class="speech-card">
+                                <div class="card-body">
+                                    <div class="rating mb-2 text-warning"><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                                    <p class="mb-0">Sangat puas dengan layanan Anugerah Printer, CS ramah dan proses
+                                        cepat. Sukses selalu!</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-meta d-flex align-items-center mt-3">
+                                <div class="testimonial-avatar me-3"><img src="img/logo.jpeg" alt="avatar" /></div>
+                                <div>
+                                    <div class="fw-semibold small">DARMAJI</div>
+                                    <div class="text-muted small">Satpam</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="px-2">
+                            <div class="speech-card">
+                                <div class="card-body">
+                                    <div class="rating mb-2 text-warning"><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                                    <p class="mb-0">Aku suka hasil cetakan yang tajam dan tone warna sesuai dengan
+                                        desain yang aku kirimkan.</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-meta d-flex align-items-center mt-3">
+                                <div class="testimonial-avatar me-3"><img src="img/logo.jpeg" alt="avatar" /></div>
+                                <div>
+                                    <div class="fw-semibold small">RAHMA</div>
+                                    <div class="text-muted small">Desainer</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="px-2">
+                            <div class="speech-card">
+                                <div class="card-body">
+                                    <div class="rating mb-2 text-warning"><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                                    <p class="mb-0">Semua banner di desa aku serahin ke Anugerah Printer, karena memang
+                                        hasilnya bagus!</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-meta d-flex align-items-center mt-3">
+                                <div class="testimonial-avatar me-3"><img src="img/logo.jpeg" alt="avatar" /></div>
+                                <div>
+                                    <div class="fw-semibold small">SUTRISNO</div>
+                                    <div class="text-muted small">Pak RT</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testiCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Prev</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testiCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section-pad fade-up">
+        <div class="container">
+            <h2 class="section-title mb-4">Pertanyaan Umum</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="q1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1"
+                            aria-expanded="true" aria-controls="a1">
+                            Berapa estimasi pengerjaan & kapan produk selesai?
+                        </button>
+                    </h2>
+                    <div id="a1" class="accordion-collapse collapse show" aria-labelledby="q1"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Umumnya 1–3 hari kerja tergantung jenis dan jumlah pesanan. Untuk urgent, silakan hubungi
+                            kami via WhatsApp.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="q2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#a2" aria-expanded="false" aria-controls="a2">
+                            Bagaimana cara memesan produk, dan apa saja file yang diperlukan?
+                        </button>
+                    </h2>
+                    <div id="a2" class="accordion-collapse collapse" aria-labelledby="q2"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Kirim detail pesanan dan file desain (PDF/PNG/JPG) melalui WhatsApp. Jika belum ada desain,
+                            tim kami bisa bantu.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="q3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#a3" aria-expanded="false" aria-controls="a3">
+                            Apakah tersedia layanan pengiriman?
+                        </button>
+                    </h2>
+                    <div id="a3" class="accordion-collapse collapse" aria-labelledby="q3"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Ya, kami melayani pengiriman dalam dan luar kota. Biaya menyesuaikan alamat tujuan dan berat
+                            barang.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-navy text-white pt-4">
+        <div class="container">
+            <div class="row g-4 align-items-start">
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-2">Dipercaya Oleh</h6>
+                    <div class="trusted-box p-2 rounded-3">
+                        <img src="img/logo.jpeg" alt="Trusted Brands" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-2">Main Menu</h6>
+                    <ul class="list-unstyled small footer-menu">
+                        <li><a href="#hero" class="text-white text-decoration-none">Landing Page</a></li>
+                        <li><a href="#produk" class="text-white text-decoration-none">Mulai Belanja</a></li>
+                        <li><a href="#unggulan" class="text-white text-decoration-none">Keunggulan</a></li>
+                        <li><a href="#testimoni" class="text-white text-decoration-none">Testimoni</a></li>
+                        <li><a href="#faq" class="text-white text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-2">Jam Buka</h6>
+                    <p class="small mb-1">Senin – Sabtu</p>
+                    <p class="small mb-2">09.00 – 21.00 WIB</p>
+                    <p class="small text-muted">Tunggu apa lagi?</p>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-2">Alamat Kantor</h6>
+                    <p class="small mb-2">Jl. H. Ipin No. 5, RT11/RW06, Pd. Labu, Kec. Cilandak,<br>Jakarta Selatan,
+                        Daerah Khusus Ibukota Jakarta 12450</p>
+                    <a href="https://maps.google.com/?q=Jl.+H.+Ipin+No.+5+Pondok+Labu+Jakarta+Selatan+12450"
+                        class="btn btn-accent btn-sm"><i class="bi bi-geo-alt me-1"></i> Google Maps</a>
+                </div>
+            </div>
+            <hr class="border-light opacity-25" />
+            <div class="d-flex justify-content-between align-items-center pb-3 small">
+                <span>© <span id="year"></span> Anugerah Printer. All Rights Reserved.</span>
+                <div class="socials d-flex gap-2">
+                    <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

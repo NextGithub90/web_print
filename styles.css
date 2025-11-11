@@ -1,0 +1,440 @@
+:root {
+  --navy-900: #07132b;
+  --navy-800: #0a1f44;
+  --navy-700: #0d2a5c;
+  --blue-modern: #2563eb; /* modern blue for outline hover */
+  --accent: #ffc107; /* amber/gold accent */
+  --text: #1e293b;
+}
+
+html,
+body {
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+}
+
+.bg-navy {
+  background: var(--navy-800) !important;
+}
+.bg-navy-700 {
+  background: var(--navy-700) !important;
+  color: #fff;
+}
+.bg-navy-900 {
+  background: var(--navy-900) !important;
+}
+.text-navy {
+  color: var(--navy-800) !important;
+}
+.btn-navy {
+  background: var(--navy-700);
+  color: #fff;
+  border: none;
+}
+.btn-navy:hover {
+  background: var(--navy-800);
+  color: #fff;
+}
+.btn-accent {
+  background: var(--accent);
+  color: #000;
+  border: none;
+}
+.btn-accent:hover {
+  background: #e0a800;
+  color: #000;
+}
+
+/* ===== Outline style for Pesan buttons ===== */
+.btn-order {
+  background: transparent !important;
+  color: var(--navy-700) !important;
+  border: 2px solid var(--navy-700) !important;
+  font-weight: 600;
+  transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+  box-shadow: none;
+}
+.btn-order:hover {
+  background: var(--blue-modern) !important;
+  border-color: var(--blue-modern) !important;
+  color: #fff !important;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.25);
+}
+
+.topbar {
+  font-size: 0.85rem;
+}
+.topbar-dark {
+  background: #2b2b2b;
+}
+.navbar .nav-link {
+  opacity: 0.85;
+}
+.navbar .nav-link:hover {
+  opacity: 1;
+}
+
+.hero-img {
+  height: 430px;
+  object-fit: cover;
+  filter: saturate(95%);
+}
+.carousel-caption {
+  background: linear-gradient(90deg, rgba(7, 19, 43, 0.8), rgba(7, 19, 43, 0));
+  backdrop-filter: saturate(110%);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  left: 3%;
+  right: auto;
+  bottom: 10%;
+}
+
+.section-pad {
+  padding: 64px 0;
+}
+.section-title {
+  font-weight: 700;
+  color: var(--navy-800);
+}
+
+.product-card {
+  border: none;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+.product-card .card-img-top {
+  height: 140px;
+  object-fit: cover;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+.product-card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.product-card .card-title {
+  margin: 0;
+  font-size: 0.95rem;
+  text-align: center;
+  width: 100%;
+}
+
+.feature-card {
+  border: none;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--navy-700);
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.footer {
+  font-size: 0.95rem;
+}
+
+.trusted-box {
+  display: flex;
+  align-items: center;
+
+  padding: 12px;
+  border-radius: 12px;
+}
+.trusted-box img {
+  width: auto;
+  max-width: 180px;
+  max-height: 100px;
+  object-fit: contain;
+}
+@media (min-width: 992px) {
+  .trusted-box img {
+    max-width: 220px;
+    max-height: 120px;
+  }
+}
+.footer-menu li + li {
+  margin-top: 6px;
+}
+.footer-menu a {
+  opacity: 0.9;
+}
+.footer-menu a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* ===== Filter Kategori Produk ===== */
+.filter-bar {
+  gap: 0.5rem;
+}
+.chip-btn {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--navy-700);
+  background: #fff;
+  color: var(--navy-700);
+}
+.chip-btn:hover {
+  background: var(--navy-800);
+  color: #fff;
+}
+.chip-btn.active {
+  background: var(--navy-700);
+  color: #fff;
+}
+
+/* ===== Grid tombol opsi produk (ukuran/tipe) ===== */
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.5rem;
+}
+.options-grid .btn {
+  width: 100%;
+}
+
+/* ===== Animations ===== */
+.fade-up,
+.fade-left,
+.fade-right {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 400ms ease, transform 400ms ease;
+  will-change: opacity, transform;
+}
+.fade-left {
+  transform: translateX(-12px);
+}
+.fade-right {
+  transform: translateX(12px);
+}
+.in-view {
+  opacity: 1;
+  transform: none;
+}
+
+/* Mobile: hanya fade (tanpa gerak kanan/kiri) */
+@media (max-width: 576px) {
+  .fade-left,
+  .fade-right {
+    transform: translateY(12px);
+  }
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .fade-up,
+  .fade-left,
+  .fade-right {
+    transition: opacity 200ms ease;
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-img {
+    height: 300px;
+  }
+  .carousel-caption {
+    padding: 1rem;
+    bottom: 6%;
+  }
+}
+
+/* ===== Testimoni ===== */
+.testimonial-track {
+  background: #f7f8fa;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+.track-arrow {
+  position: absolute;
+  top: 50%;
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--navy-700);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+.track-arrow.start-0 {
+  left: 18px;
+}
+.track-arrow.end-0 {
+  right: 18px;
+}
+
+.speech-card {
+  position: relative;
+  border: none;
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+.speech-card:after {
+  content: "";
+  position: absolute;
+  left: 42px;
+  bottom: -14px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-left: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  transform: rotate(45deg);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.05);
+}
+.speech-card .card-body {
+  padding: 1.25rem 1.25rem;
+}
+
+.testimonial-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--navy-700);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+.testimonial-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== Card Hover: Modern Blue Accent ===== */
+.card {
+  transition: box-shadow 220ms ease, transform 180ms ease, background-color 220ms ease;
+  will-change: box-shadow, transform;
+}
+.speech-card {
+  transition: box-shadow 220ms ease, transform 180ms ease, background-color 220ms ease;
+}
+.card:hover,
+.product-card:hover,
+.feature-card:hover,
+.speech-card:hover {
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.18), 0 4px 10px rgba(37, 99, 235, 0.08);
+  transform: translateY(-2px);
+  background: linear-gradient(0deg, rgba(37, 99, 235, 0.03), rgba(37, 99, 235, 0.03)), #fff;
+}
+
+/* Header kuning ala referensi */
+.bg-brand-yellow {
+  background: #d6e84c !important;
+} /* hijau-kuning lembut */
+.navbar-yellow .navbar-brand,
+.navbar-yellow .nav-link {
+  color: #1b1b1b !important;
+}
+.navbar-yellow .nav-link.active {
+  font-weight: 600;
+}
+
+/* ===== Responsive Mobile Tweaks ===== */
+@media (max-width: 576px) {
+  .section-pad {
+    padding: 40px 0;
+  }
+  .section-title {
+    font-size: 1.375rem;
+  }
+
+  .hero-img {
+    height: 240px;
+  }
+  .carousel-caption {
+    left: 4%;
+    right: 4%;
+    bottom: 8%;
+    border-radius: 0.5rem;
+  }
+  .carousel-caption h1 {
+    font-size: 1.25rem;
+  }
+  .carousel-caption .lead {
+    font-size: 0.95rem;
+  }
+  .carousel-caption .btn {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.9rem;
+  }
+
+  .product-card .card-img-top {
+    height: 110px;
+  }
+  .product-card .card-body {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn-order {
+    width: 100%;
+  }
+
+  .filter-bar {
+    margin-bottom: 0.5rem;
+  }
+
+  .options-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial-track {
+    padding: 1rem;
+    border: none;
+    background: #f8fafc;
+  }
+  .speech-card:after {
+    left: 28px;
+    bottom: -10px;
+    width: 16px;
+    height: 16px;
+  }
+  .testimonial-avatar {
+    width: 36px;
+    height: 36px;
+    border-width: 2px;
+  }
+
+  .topbar {
+    font-size: 0.8rem;
+  }
+  .navbar-brand span {
+    font-size: 1rem;
+  }
+  .footer {
+    font-size: 0.9rem;
+  }
+}
+
+/* Slider Testimoni (mobile) */
+.carousel-testimonial .carousel-indicators [data-bs-target] {
+  background-color: var(--navy-700);
+}
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: -66px !important;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+}
+.carousel-testimonial .carousel-item {
+  padding: 0 0.25rem;
+}
