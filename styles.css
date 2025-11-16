@@ -75,8 +75,8 @@ body {
 }
 
 .hero-img {
-  height: 430px;
-  object-fit: cover;
+  height: 539px;
+  /* object-fit: cover; */
   filter: saturate(95%);
 }
 .carousel-caption {
@@ -102,8 +102,11 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 .product-card .card-img-top {
-  height: 140px;
-  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 4/3; /* seragam, tidak terpotong */
+  height: auto;
+  object-fit: contain;
+  background: #f8fafc; /* letterbox halus */
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 0.75rem;
 }
@@ -442,7 +445,8 @@ body {
   }
 
   .product-card .card-img-top {
-    height: 110px;
+    aspect-ratio: 4/3;
+    height: auto;
   }
   .product-card .card-body {
     flex-direction: column;
@@ -586,5 +590,68 @@ body {
   }
   .slider-modern .carousel-item {
     margin-right: 12px;
+  }
+}
+/* --- WhatsApp Floating Buttons --- */
+.wa-floating {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1050;
+}
+
+.wa-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25d366; /* WhatsApp green */
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
+  animation: wa-float 3.6s ease-in-out infinite;
+  will-change: transform;
+}
+
+.wa-btn svg {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.wa-btn:hover {
+  transform: translateY(-2px) scale(1.04);
+}
+.wa-btn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.wa-btn.wa-1 {
+  animation-delay: 0s;
+}
+.wa-btn.wa-2 {
+  animation-delay: 0.9s;
+}
+
+@keyframes wa-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@media (max-width: 480px) {
+  .wa-btn {
+    width: 52px;
+    height: 52px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
   }
 }
