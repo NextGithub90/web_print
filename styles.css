@@ -264,7 +264,11 @@ body {
     bottom: 6%;
   }
 }
-
+@media (min-width: 1300px) {
+  .hero-img {
+    height: 100%;
+  }
+}
 /* ===== Testimoni ===== */
 .testimonial-track {
   background: #f7f8fa;
@@ -469,6 +473,20 @@ body {
     border: none;
     background: #f8fafc;
   }
+
+/* Navbar putih terarah */
+.navbar.bg-white { background-color: #FFFFFF !important; }
+.navbar.bg-white .navbar-brand,
+.navbar.bg-white .nav-link { color: #333333; text-shadow: none; opacity: 1; }
+.navbar.bg-white .nav-link:hover,
+.navbar.bg-white .nav-link:focus { color: #111111; }
+.navbar.bg-white .nav-link.active,
+.navbar.bg-white .nav-link.show { color: #000000; font-weight: 600; }
+.navbar.bg-white .dropdown-menu { background-color: #FFFFFF; border-color: rgba(0,0,0,0.1); }
+.navbar.bg-white .dropdown-item { color: #333333; }
+.navbar.bg-white .dropdown-item:hover,
+.navbar.bg-white .dropdown-item:focus { color: #111111; background-color: rgba(0,0,0,0.05); }
+.navbar-light .navbar-toggler { border-color: rgba(0,0,0,0.15); }
   .speech-card:after {
     left: 28px;
     bottom: -10px;
@@ -656,7 +674,9 @@ body {
   }
 }
 /* ===== Footer Modern (3 Columns) ===== */
-.footer-modern .footer-block { padding: 8px 0; }
+.footer-modern .footer-block {
+  padding: 8px 0;
+}
 .footer-modern .footer-heading {
   display: inline-flex;
   align-items: center;
@@ -669,13 +689,22 @@ body {
   display: inline-block;
   width: 26px;
   height: 2px;
-  background: rgba(255,255,255,0.5);
+  background: rgba(255, 255, 255, 0.5);
   border-radius: 2px;
 }
-.footer-modern .footer-list li { margin-bottom: 8px; opacity: 0.95; }
-.footer-modern .footer-list i { opacity: 0.85; }
-.footer-modern .footer-list li:hover { opacity: 1; }
+.footer-modern .footer-list li {
+  margin-bottom: 8px;
+  opacity: 0.95;
+}
+.footer-modern .footer-list i {
+  opacity: 0.85;
+}
+.footer-modern .footer-list li:hover {
+  opacity: 1;
+}
 
 @media (max-width: 576px) {
-  .footer-modern .footer-heading { margin-top: 8px; }
+  .footer-modern .footer-heading {
+    margin-top: 8px;
+  }
 }
