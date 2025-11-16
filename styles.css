@@ -655,3 +655,27 @@ body {
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
   }
 }
+/* ===== Footer Modern (3 Columns) ===== */
+.footer-modern .footer-block { padding: 8px 0; }
+.footer-modern .footer-heading {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+.footer-modern .footer-heading::before {
+  content: "";
+  display: inline-block;
+  width: 26px;
+  height: 2px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 2px;
+}
+.footer-modern .footer-list li { margin-bottom: 8px; opacity: 0.95; }
+.footer-modern .footer-list i { opacity: 0.85; }
+.footer-modern .footer-list li:hover { opacity: 1; }
+
+@media (max-width: 576px) {
+  .footer-modern .footer-heading { margin-top: 8px; }
+}
