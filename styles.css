@@ -266,7 +266,7 @@ body {
 }
 @media (min-width: 1300px) {
   .hero-img {
-    height: 780px;
+    height: 75%;
   }
 }
 /* ===== Testimoni ===== */
